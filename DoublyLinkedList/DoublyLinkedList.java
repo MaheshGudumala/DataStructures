@@ -1,5 +1,3 @@
-package javaselflearning;
-
 public class DoublyLinkedList {
 	public int size = 0;
 	public class Node{

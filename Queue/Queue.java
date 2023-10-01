@@ -1,4 +1,3 @@
-package javaselflearning;
 
 public class Queue {
 	public class Node{	//each element on Queue

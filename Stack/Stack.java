@@ -1,4 +1,4 @@
-package javaselflearning;
+
 
 public class Stack {
 	public class Node{	//each element on the stack
