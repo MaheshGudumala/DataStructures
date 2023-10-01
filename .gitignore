@@ -1,0 +1,39 @@
+# IntelliJ IDEA specific files/directories
+.idea/
+*.iml
+*.iws
+
+# Compiled bytecode
+*.class
+
+# Build directories and files
+target/
+out/
+build/
+
+# Logs and databases
+log/
+*.log
+*.ldb
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temp files
+*.tmp
+*.bak
+*.swp
+*~.nib
+*.savedState
+
+# Other common artifacts
+*.bak
+*.swp
+*~
+*.rej
