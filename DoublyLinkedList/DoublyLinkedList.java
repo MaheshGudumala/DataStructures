@@ -1,150 +1,96 @@
-public class DoublyLinkedList {
-	public int size = 0;
-	public class Node{
-		int data;
-		Node prev;
-		Node next;
-		Node(int data){
-			this.data = data;
-		}
+class Node{
+	Node prev;
+	int value;
+	Node next;
+	Node(){}
+	Node (int value){
+		this.value = value;
 	}
-	public Node head = null;
-	public Node tail = null;
-	public void insertBegin(int data) {
-		size++;
-		Node newNode = new Node(data);
-		if(head == null) {
-			head = tail = newNode;
-			head.prev = null;
-			tail.next = null;
-		}
-		else {
-			head.prev = newNode;
-			newNode.next = head;
-			head = newNode;
-			head.prev = null;
-		}
+}
+public class DoublyLinkedList{
+	Node head;
+	DoublyLinkedList(){
+		head = null;
 	}
-	public void insertMid(int position, int data) {
-		if(position <= size && position > 0) {
-			Node newNode = new Node(data);
-			if(position == 1) {
-				head.prev = newNode;
-				newNode.next = head;
-				head = newNode;
-				head.prev = null;
-			}
-			else if(position == size) {
-				tail.next = newNode;
-				newNode.prev = tail;
-				tail = newNode;
-				tail.next = null;
-			}
-			else {
-				int i = 1;
-				Node currentNode = head;
-				while(i < position) {
-					currentNode = currentNode.next;
-					i++;
-				}
-				newNode.next = currentNode;
-				newNode.prev = currentNode.prev;
-				currentNode.prev.next = newNode;
-				currentNode.prev = newNode;
-			}
-		}
+	boolean isEmpty(){
+		return head == null;
 	}
-	public void insertEnd(int data) {
-		size++;
-		Node newNode = new Node(data);
-		if(head == null) {
-			head = tail = newNode;
-			head.prev = null;
-			tail.next = null;
-		}
-		else {
-			tail.next = newNode;
-			newNode.prev = tail;
-			tail = newNode;
-			tail.next = null;
-		}
-	}
-	public void deleteBegin() {
-		if(head == null) {
-			System.out.println("No elements to delete");
+	void insertAtStart(int value){
+		//todo
+		Node node = new Node(value);
+		if(isEmpty()){
+			head = node;
 		} else {
-			head = head.next;
-			head.prev = null;
-			size--;
-		}
-		
-	}
-	public void deleteMid(int position) {
-		Node currentNode = head;
-		if(head == null) {
-			System.out.println("No elements to delete");
-		}
-		else if(position <= size && position > 0) {
-			if(position == 1) {
-				head = head.next;
-				head.prev = null;
-				size--;
-			}
-			else if(position == size) {
-				tail = tail.prev;
-				tail.next = null;
-				size--;
-			}
-			else {
-				int i = 1;
-				while(i < position) {
-					currentNode = currentNode.next;
-					i++;
-				}
-				currentNode.prev.next = currentNode.next;
-				currentNode.next.prev = currentNode.prev;
-				currentNode = null;
-			}
+			node.next = head;
+			head.prev = node;
+			head = node;
 		}
 	}
-	public void deleteEnd() {
-		if(head == null) {
-			System.out.println("No elements to delete");
+	void insertAtEnd(int value){
+		//todo
+		Node node = new Node(value);
+		if(!isEmpty()){
+			Node temp = head;
+			while(temp.next != null){
+				temp = temp.next;
+			}
+			temp.next = node;
+			node.prev = temp;
 		} else {
-			tail = tail.prev;
-			tail.next = null;
-			size--;
+			head = node;
 		}
 	}
-	public void displayfromBegin() {
-		Node currentNode = head;
-		if(size == 0) {
-			System.out.println("No list elements");
-		}
-		else {
-			while(currentNode != null) {
-				System.out.println(currentNode.data);
-				currentNode = currentNode.next;
-			}
-		}
+	int deleteFromStart(){
+		if(isEmpty()) return -1;
+		int result;
+		result = head.value;
+		head = head.next;
+		return result;
 	}
-	public void displayfromEnd() {
-		Node currentNode = tail;
-		if(size == 0) {
-			System.out.println("No list elements");
+	int deleteFromEnd(){
+		if(isEmpty()) return -1;
+		int result;
+		Node temp = head;
+		while(temp.next != null){
+			temp = temp.next;
 		}
-		else {
-			while(currentNode != null) {
-				System.out.println(currentNode.data);
-				currentNode = currentNode.prev;
-			}
+		result = temp.value;
+		if(temp.prev != null){
+			temp.prev.next = null;
+		} else {
+			head = null;
 		}
+		return result;
+	}
+	void display(){
+		if(isEmpty()) return;
+		Node temp = head;
+		while(temp != null){
+			System.out.print(temp.value+" ");
+			temp = temp.next;
+		}
+		System.out.println();
 	}
 	public static void main(String[] args) {
-		DoublyLinkedList list = new DoublyLinkedList();
-		//do your operations here with the list 
-		list = null;
-		System.gc();
+		DoublyLinkedList doublyLinkedList = new DoublyLinkedList();
+		doublyLinkedList.display();
+		doublyLinkedList.insertAtEnd(3);
+		doublyLinkedList.display();
+		doublyLinkedList.insertAtEnd(4);
+		doublyLinkedList.display();
+		doublyLinkedList.insertAtStart(2);
+		doublyLinkedList.display();
+		doublyLinkedList.insertAtEnd(5);
+		doublyLinkedList.display();
+		doublyLinkedList.insertAtStart(1);
+		doublyLinkedList.display();
+		doublyLinkedList.deleteFromStart();
+		doublyLinkedList.display();
+		doublyLinkedList.deleteFromEnd();
+		doublyLinkedList.display();
+		doublyLinkedList.deleteFromEnd();
+		doublyLinkedList.display();
+		doublyLinkedList.deleteFromStart();
+		doublyLinkedList.display();
 	}
-
 }

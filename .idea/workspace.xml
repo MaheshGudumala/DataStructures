@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b13f8584-6761-411e-8547-c20442ecc138" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Array/src/Array.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkedList/src/LinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FenwickTree/src/FenwickTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SegmentTree/src/SegmentTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stack/StackUsingArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoublyLinkedList/DoublyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoublyLinkedList/DoublyLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/DoublyLinkedList$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/DoublyLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataStructures/DoublyLinkedList.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,16 +39,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Stack/StackUsingArray.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="731">
+              <caret line="43" column="45" selection-start-line="43" selection-start-column="45" selection-end-line="43" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LinkedList/src/LinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-619">
-              <caret line="26" column="36" lean-forward="true" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
+            <state relative-caret-position="374">
+              <caret line="26" column="36" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
               <folding>
                 <element signature="e#66#67#0" expanded="true" />
-                <element signature="e#90#91#0" expanded="true" />
-                <element signature="e#162#163#0" expanded="true" />
-                <element signature="e#190#191#0" expanded="true" />
+                <element signature="e#98#99#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -60,7 +72,39 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DoublyLinkedList/DoublyLinkedList.java">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="646">
+              <caret line="44" column="19" selection-start-line="44" selection-start-column="19" selection-end-line="44" selection-end-column="19" />
+              <folding>
+                <element signature="e#204#205#0" expanded="true" />
+                <element signature="e#230#231#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SegmentTree/src/SegmentTree.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="13" selection-start-column="13" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/FenwickTree/src/FenwickTree.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="416">
+              <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
+              <folding>
+                <element signature="e#609#610#0" expanded="true" />
+                <element signature="e#647#648#0" expanded="true" />
+                <element signature="e#951#952#0" expanded="true" />
+                <element signature="e#983#984#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -80,9 +124,13 @@
       <list>
         <option value="$PROJECT_DIR$/Queue/QueueUsingSinglyLinkedList.java" />
         <option value="$PROJECT_DIR$/Stack/StackUsingSinglyLinkedList.java" />
-        <option value="$PROJECT_DIR$/DoublyLinkedList/DoublyLinkedList.java" />
         <option value="$PROJECT_DIR$/Array/src/Array.java" />
         <option value="$PROJECT_DIR$/LinkedList/src/LinkedList.java" />
+        <option value="$PROJECT_DIR$/Stack/StackUsingArray.java" />
+        <option value="$PROJECT_DIR$/temp.txt" />
+        <option value="$PROJECT_DIR$/DoublyLinkedList/DoublyLinkedList.java" />
+        <option value="$PROJECT_DIR$/SegmentTree/src/SegmentTree.java" />
+        <option value="$PROJECT_DIR$/FenwickTree/src/FenwickTree.java" />
       </list>
     </option>
   </component>
@@ -96,7 +144,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -107,27 +154,27 @@
             <path>
               <item name="DataStructures" type="b2602c69:ProjectViewProjectNode" />
               <item name="DataStructures" type="462c0819:PsiDirectoryNode" />
-              <item name="LinkedList" type="462c0819:PsiDirectoryNode" />
+              <item name="DoublyLinkedList" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DataStructures" type="b2602c69:ProjectViewProjectNode" />
               <item name="DataStructures" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="FenwickTree" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DataStructures" type="b2602c69:ProjectViewProjectNode" />
               <item name="DataStructures" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="production" type="462c0819:PsiDirectoryNode" />
+              <item name="Stack" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1696944009127" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1698965055499" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -153,10 +200,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.LinkedList">
-    <configuration name="Array" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Array" />
-      <module name="Array" />
+  <component name="RunManager" selected="Application.FenwickTree">
+    <configuration name="DoublyLinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DoublyLinkedList" />
+      <module name="DataStructures" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FenwickTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="FenwickTree" />
+      <module name="FenwickTree" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -168,8 +222,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Queue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Queue" />
+    <configuration name="SegmentTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SegmentTree" />
+      <module name="SegmentTree" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StackUsingArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="StackUsingArray" />
       <module name="DataStructures" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -177,9 +238,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FenwickTree" />
+        <item itemvalue="Application.SegmentTree" />
+        <item itemvalue="Application.DoublyLinkedList" />
+        <item itemvalue="Application.StackUsingArray" />
         <item itemvalue="Application.LinkedList" />
-        <item itemvalue="Application.Array" />
-        <item itemvalue="Application.Queue" />
       </list>
     </recent_temporary>
   </component>
@@ -200,7 +263,7 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25679544" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26752505" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -238,10 +301,42 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SingleLinkedList/SIngleLinkedList.java" />
+    <entry file="file://$PROJECT_DIR$/temp.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="745">
+          <caret line="150" lean-forward="true" selection-start-line="150" selection-end-line="150" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Queue/Queue.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="663">
           <caret line="43" column="36" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Stack/Stack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Stack/StackUsingArray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="43" column="45" selection-start-line="43" selection-start-column="45" selection-end-line="43" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LinkedList/src/LinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="26" column="36" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
+          <folding>
+            <element signature="e#66#67#0" expanded="true" />
+            <element signature="e#98#99#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -253,24 +348,32 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DoublyLinkedList/DoublyLinkedList.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Stack/Stack.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+        <state relative-caret-position="646">
+          <caret line="44" column="19" selection-start-line="44" selection-start-column="19" selection-end-line="44" selection-end-column="19" />
+          <folding>
+            <element signature="e#204#205#0" expanded="true" />
+            <element signature="e#230#231#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LinkedList/src/LinkedList.java">
+    <entry file="file://$PROJECT_DIR$/SegmentTree/src/SegmentTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-619">
-          <caret line="26" column="36" lean-forward="true" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FenwickTree/src/FenwickTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
           <folding>
-            <element signature="e#66#67#0" expanded="true" />
-            <element signature="e#90#91#0" expanded="true" />
-            <element signature="e#162#163#0" expanded="true" />
-            <element signature="e#190#191#0" expanded="true" />
+            <element signature="e#609#610#0" expanded="true" />
+            <element signature="e#647#648#0" expanded="true" />
+            <element signature="e#951#952#0" expanded="true" />
+            <element signature="e#983#984#0" expanded="true" />
           </folding>
         </state>
       </provider>
